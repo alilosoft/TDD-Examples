@@ -27,12 +27,20 @@ public class StringHelperTest {
 		assertEquals(expected, actual);
 	}
 	
-	// test condition 2: string with n chars length 
+	// test condition 2: string with 3 chars length 
 	@Test
 	public void testStringWith3Chars() {
 		String expected = "ACB";
 		String actual = stringHelper.swapLast2Chars("ABC");
 		assertEquals(expected, actual);
 	}
+	
+	// test condition 3: string with n chars length 
+		@Test
+		public void testStringWithNChars() {
+			String expected = "ABCDEFGIH";
+			String actual = stringHelper.swapLast2Chars("ABCDEFGHI");
+			assertEquals(expected, actual);
+		}
 
 }
