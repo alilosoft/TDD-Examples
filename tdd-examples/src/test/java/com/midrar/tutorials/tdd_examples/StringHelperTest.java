@@ -9,7 +9,7 @@ import org.junit.Test;
  * 	User Story:
  * 	Given: a string 'str' of n chars;
  * 	When: 'str' length is greater then or equal to 2 chars;
- * 	Then: swap the 2 last chars;
+ * 	Then: swap the last tow chars;
  * 
  *  Conditions:
  *  'AB' => 'BA', 'ABC' => 'ACB', 'A' => 'A', '' => ''
@@ -18,8 +18,11 @@ import org.junit.Test;
 public class StringHelperTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testStringWith2Chars() {
+		StringHelper stringHelper = new StringHelper();
+		String expected = "BA";
+		String actual = stringHelper.swapLast2Chars("AB");
+		assertEquals(expected, actual);
 	}
 
 }
