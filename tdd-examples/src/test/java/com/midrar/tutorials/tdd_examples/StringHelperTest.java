@@ -48,5 +48,13 @@ public class StringHelperTest {
 		String actual = stringHelper.swapLast2Chars("A");
 		assertEquals(expected, actual);
 	}
+	
+	// test condition 5: string with 0 char length
+		@Test
+		public void testWithEmtyString() {
+			String expected = "";
+			String actual = stringHelper.swapLast2Chars("");
+			assertEquals(expected, actual);
+		}
 
 }
