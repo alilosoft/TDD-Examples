@@ -16,12 +16,22 @@ import org.junit.Test;
  */
 
 public class StringHelperTest {
-
+	
+	StringHelper stringHelper = new StringHelper();
+	
+	// test condition 1: string with 2 chars length 
 	@Test
 	public void testStringWith2Chars() {
-		StringHelper stringHelper = new StringHelper();
 		String expected = "BA";
 		String actual = stringHelper.swapLast2Chars("AB");
+		assertEquals(expected, actual);
+	}
+	
+	// test condition 2: string with n chars length 
+	@Test
+	public void testStringWith3Chars() {
+		String expected = "ACB";
+		String actual = stringHelper.swapLast2Chars("ABC");
 		assertEquals(expected, actual);
 	}
 
