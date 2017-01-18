@@ -12,7 +12,7 @@ import org.junit.Test;
  * 	Then: swap the last tow chars;
  * 
  *  Conditions:
- *  'AB' => 'BA', 'ABC' => 'ACB', 'A' => 'A', '' => ''
+ *  'AB' => 'BA', 'ABC' => 'ACB', 'A' => 'A', '' => '', null => throws exception
  */
 
 public class StringHelperTest {
